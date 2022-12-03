@@ -1,4 +1,5 @@
 import React from 'react'
+import {Navbar,Header} from "../../components/"
 
 const List = () => {
     return (
