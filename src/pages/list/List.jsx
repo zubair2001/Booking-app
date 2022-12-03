@@ -2,7 +2,10 @@ import React from 'react'
 
 const List = () => {
     return (
-        <div>List</div>
+        <div>
+            <Navbar/>
+            <Header type="list"/>
+        </div>
     )
 }
 
