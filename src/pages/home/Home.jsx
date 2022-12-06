@@ -3,7 +3,9 @@ import {Navbar,Header} from '../../components/'
 import Featured from '../../components/featured/Featured'
 import FeaturedProperties from '../../components/featuredProperties/FeaturedProperties'
 import PropertyList from '../../components/propertyList/PropertyList'
+import MailList from '../../components/mailList/MailList'
 import './home.css'
+import Footer from '../../components/footer/Footer'
 
 const Home = () => {
     return (
@@ -16,6 +18,8 @@ const Home = () => {
                 <PropertyList />
                 <h1 className='homeTitle'>Homes guests love</h1>
                 <FeaturedProperties />
+                <MailList />
+                <Footer/>
             </div>
         </div>
     )
