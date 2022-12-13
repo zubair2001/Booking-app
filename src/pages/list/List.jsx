@@ -18,8 +18,9 @@ const List = () => {
     const [max, setMax] = useState(undefined);
 
     const { data, loading, error, reFetch } = useFetch(
-        `/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`
+        `http://localhost:8800/api/hotels?city=${destination}&min=${min || 0 }&max=${max || 999}`
     );
+    console.log(location);
 
     const handleClick = () => {
         reFetch();
@@ -103,7 +104,7 @@ const List = () => {
                     </div>
                 </div>
                 </div>
-                <button onClick={handleClick}>Search</button>
+                <button className="lsSearchBtn" onClick={handleClick}>Search</button>
             </div>
             <div className="listResult">
                 {loading ? (

@@ -141,3 +141,7 @@ body{
 .optionCounterButton:disabled{
     cursor: not-allowed;
 }
+
+.headerSearchText{
+    color: rgb(95, 92, 92);
+}

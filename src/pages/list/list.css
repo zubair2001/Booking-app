@@ -81,3 +81,7 @@
     border: none;
     cursor: pointer;
 }
+
+.lsSearchBtn::hover{
+    background-color: #01355a;
+}

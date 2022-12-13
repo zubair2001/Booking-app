@@ -1,7 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import { SearchContextProvider } from './context/SearchContext'
+import { AuthContextProvider } from './context/AuthContext'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />
+const root= ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <SearchContextProvider>
+        <AuthContextProvider>
+            <App />
+        </AuthContextProvider>
+    </SearchContextProvider>
 )
