@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const LoginClick = ()=>{
         localStorage.removeItem("user");
-        window.location.replace("/");
+        window.location.replace("/login");
         dispatchEvent({type:"LOGOUT"})
     }
 
