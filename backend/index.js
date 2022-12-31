@@ -49,3 +49,7 @@ const connect = async () =>{
         connect();
         console.log("Connected to Backend!");
     })
+
+
+//     ,
+//   "proxy": "http://localhost:8800/api"
